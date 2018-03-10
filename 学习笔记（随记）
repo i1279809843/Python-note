@@ -1,2 +1,43 @@
 id(Obj)       获取object的地址
-type(Obj)     获取object的类型
+type(Obj)     获取object的类型，数据自身的类型，并不是C语音中声明所使用的类型
+len(Obj)      获取object的元素个数
+
+列表使用:用“[]” 表示，可变序列
+list["list1", "list2", "list3"]
+list[0] 输出: list1
+list[1] 输出: list2
+list[0][0] 输出: l
+list[0][1] 输出: i
+
+元组使用:用“()” 表示，不可变序列
+list("list1", "list2", "list3")
+list[0]     输出: list1
+list[1]     输出: list2
+list[0][0]  输出: l
+list[0][1]  输出: i
+
+字符串也属于序列类型,字符串切片使用 [A:B:C]:A为起点
+                                       B输出的个数，AB不设置默认为起点和终点
+                                       C为步进
+name = "abcd"
+name[0]        输出: a
+name[1:]       输出: bcd
+name[0:2]      输出: ab
+name[:3]       输出: abc
+name[0:4:2]    输出: ac
+
+Python提供了4组逻辑运算：
+1.身份操作符 
+  "is",判断左右两端引用的对象是否相同
+  name1 = 1
+  name2 = 1
+  name1 is name2 输出:True
+2.比较操作符
+  <,>,<=,>=,!=,==
+ 
+ 3.成员操作符
+  in或者no in：测试成员关系
+  
+ 4.逻辑运算符
+  and，or，not
+  
