@@ -1,3 +1,3 @@
-,,,Python
+```Python
 id(Obj)       获取object的地址
 type(Obj)     获取object的类型
